@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QgT-84-WC0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bba-S0-4dg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHp-aD-B0c">
-                                <rect key="frame" x="142" y="289" width="90" height="88"/>
+                                <rect key="frame" x="142.5" y="289.5" width="90" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="3QC-ta-p8j"/>
                                     <constraint firstAttribute="width" constant="90" id="Tla-zf-uhp"/>
@@ -160,7 +160,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOh-7q-ol4">
-                                <rect key="frame" x="67" y="142" width="240" height="75"/>
+                                <rect key="frame" x="67.5" y="142" width="240" height="75"/>
                                 <color key="backgroundColor" red="0.95216627060000003" green="1" blue="0.350324146" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="GS1-M7-fqv"/>
@@ -168,7 +168,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNj-BZ-XOh">
-                                <rect key="frame" x="153" y="99" width="68" height="35"/>
+                                <rect key="frame" x="153.5" y="99" width="68" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -185,6 +185,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Auto Layout  Animation" id="BhM-En-z1X"/>
                     <connections>
+                        <outlet property="height" destination="yt9-Ic-fth" id="ENy-qI-QF5"/>
                         <outlet property="label" destination="TNj-BZ-XOh" id="cXI-XA-JB8"/>
                         <outlet property="yellowView" destination="yOh-7q-ol4" id="4n0-sM-9Mk"/>
                     </connections>

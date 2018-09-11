@@ -34,6 +34,16 @@ class SpringAnimationViewController: UIViewController {
     let velocity = slider3.value // max 100
     
     //TODO: - Animate PinkView to finishLine using a Spring Animation
+    
+    UIView.animate(withDuration: 2.0, delay: Double(delay), usingSpringWithDamping: CGFloat(damping), initialSpringVelocity: CGFloat(velocity), animations: {
+      self.pinkView.center.y = self.finishLine.center.y - (self.pinkView.bounds.height/2 + self.finishLine.bounds.height/2)
+      
+    }) { (_) in
+      UIView.animate(withDuration: 1.0, delay: 1.0, options: .curveEaseInOut, animations: {
+        self.pinkView.center = self.startCenter
+      })
+    }
+    
     //TODO: - Animate PinkView back to original position
     
     

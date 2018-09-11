@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AA794E952145DFFE00D25F5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA794E942145DFFE00D25F5C /* AppDelegate.swift */; };
-		AA794E9A2145DFFE00D25F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA794E982145DFFE00D25F5C /* Main.storyboard */; };
 		AA794E9C2145E00200D25F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA794E9B2145E00200D25F5C /* Assets.xcassets */; };
 		AA794E9F2145E00200D25F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA794E9D2145E00200D25F5C /* LaunchScreen.storyboard */; };
 		AA794EA72145E3A000D25F5C /* SpringAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA794EA62145E3A000D25F5C /* SpringAnimationViewController.swift */; };
 		AA794EA92145FD2400D25F5C /* KeyframeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA794EA82145FD2400D25F5C /* KeyframeAnimationViewController.swift */; };
 		AA794EAB2146CD6000D25F5C /* AutoLayoutAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA794EAA2146CD6000D25F5C /* AutoLayoutAnimationViewController.swift */; };
+		AAFBBEB621480492000A042E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFBBEB521480492000A042E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA794E912145DFFE00D25F5C /* UIViewAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA794E942145DFFE00D25F5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA794E992145DFFE00D25F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA794E9B2145E00200D25F5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA794E9E2145E00200D25F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA794EA02145E00200D25F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA794EA62145E3A000D25F5C /* SpringAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationViewController.swift; sourceTree = "<group>"; };
 		AA794EA82145FD2400D25F5C /* KeyframeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframeAnimationViewController.swift; sourceTree = "<group>"; };
 		AA794EAA2146CD6000D25F5C /* AutoLayoutAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutAnimationViewController.swift; sourceTree = "<group>"; };
+		AAFBBEB521480492000A042E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		AA794E932145DFFE00D25F5C /* UIViewAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AA794EC02146DB7500D25F5C /* View */,
+				AAFBBEB521480492000A042E /* Main.storyboard */,
 				AA794EBF2146DB5800D25F5C /* Supplementary Files */,
 				AA794EC12146DB8700D25F5C /* Controllers */,
 			);
@@ -74,14 +74,6 @@
 				AA794EA02145E00200D25F5C /* Info.plist */,
 			);
 			name = "Supplementary Files";
-			sourceTree = "<group>";
-		};
-		AA794EC02146DB7500D25F5C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AA794E982145DFFE00D25F5C /* Main.storyboard */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		AA794EC12146DB8700D25F5C /* Controllers */ = {
@@ -152,9 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFBBEB621480492000A042E /* Main.storyboard in Resources */,
 				AA794E9F2145E00200D25F5C /* LaunchScreen.storyboard in Resources */,
 				AA794E9C2145E00200D25F5C /* Assets.xcassets in Resources */,
-				AA794E9A2145DFFE00D25F5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AA794E982145DFFE00D25F5C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA794E992145DFFE00D25F5C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AA794E9D2145E00200D25F5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -31,11 +31,12 @@ class AutoLayoutAnimationViewController: UIViewController {
     }
   }
   
-  var isExpanded = Expanded.no
+  var isExpanded = Expanded.yes
 
   override func viewDidLoad() {
     super.viewDidLoad()
     addGesture()
+    view.layoutIfNeeded()
     updateView()
   }
   
@@ -52,7 +53,16 @@ class AutoLayoutAnimationViewController: UIViewController {
   }
   
   private func updateView() {
-    //2:TODO - implement animation for adjusting height constant
     //3:TODO - adjust label's text depending on isExpanded state
+    let currentText = isExpanded.ouput()
+    self.label.text = currentText
+    self.view.layoutIfNeeded()
+    
+    //2:TODO - implement animation for adjusting height constant
+    let height = self.isExpanded.rawValue
+    self.height.constant = height
+    UIView.animate(withDuration: 0.3, delay: 0, animations: {
+      self.view.layoutIfNeeded()
+    })
   }
 }
